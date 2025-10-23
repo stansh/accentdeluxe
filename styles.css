@@ -16,12 +16,12 @@ body {
 
   .navbar{
    
-    background: linear-gradient(to left, #310101, #531a00);
+    background: linear-gradient(to left, #1b0000, #531a00);
   }
 
   section {
     padding: 100px 0;
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     
   }
@@ -58,6 +58,11 @@ body {
     background-position: 'image';  
     border-bottom: 2px dotted #b7b7b7;
 
+  }
+
+  footer{
+    background-color: #2a0d01;
+    font-size: 500px;
   }
 
 
