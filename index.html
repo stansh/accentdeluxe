@@ -8,8 +8,10 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
   <style>
-    body {
+    /* body {
       scroll-behavior: smooth;
     }
     section {
@@ -18,7 +20,7 @@
     }
     nav.navbar {
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
+    } */
   </style>
 </head>
 <body>
@@ -46,24 +48,43 @@
   <!-- Sections -->
   <section id="home" class=" text-center">
     <div class="container">
-      <!-- <h1 class="display-4">Accent Deluxe</h1>
-      <p class="lead">Welcome to our homepage! Scroll or click the links above to explore.</p> -->
-      <div class="row align-items-center">
-        <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start">
-          <h1 class="display-4">Accent Deluxe</h1>
-          <h4 class="lead">Welcome to our website!</h4>
+      <div class="row align-items-top">
+        <div id="leftAnim" class="col-md-6 mb-4 mb-md-0 text-center text-md-start">
+          <h1 class="display-4">Accent Deluxe</h1> 
+          <a class="my-1 d-block" href="https://www.facebook.com/accent.deluxe" target="_blank">
+           <img src="images/fb_logo.png" alt="FB Logo" width="30" height="auto">
+          </a>
+          
+          <h4 class="lead my-2">Welcome to our website!</h4>
           <p>Accent Deluxe is a jazz ensemble based in the Twin Cities, MN, blending sounds from across the world into a vibrant and soulful experience. Drawing inspiration from       traditional jazz, gypsy jazz, Italian melodies, bossa nova, and Latin rhythms, the group creates a unique and dynamic sound that feels both classic and fresh.
             With each performance, Accent Deluxe brings warmth, energy, and a touch of international flair to the stage — celebrating the beauty of musical diversity and the timeless spirit of jazz.
         </p>
-        <a href="https://www.facebook.com/accent.deluxe" target="_blank">
-            <img src="images/fb_logo.png" alt="FB Logo" width="30" height="auto">
-        </a>
+        <h5 class="pt-lg-3">Musicians:</h5>
+        <div id="bios" class="d-flex flex-column flex-md-row gap-3">
+    
+          <button type="button" class="btn w-100 w-lg-25" data-bs-toggle="modal" data-bs-target="#yana">
+            Yana
+          </button>
+          <button type="button" class="btn w-100 w-lg-25" data-bs-toggle="modal" data-bs-target="#stas">
+           Stas
+          </button>
+          <button type="button" class="btn w-100 w-lg-25" data-bs-toggle="modal" data-bs-target="#nick">
+            Nick
+          </button>
+          <button type="button" class="btn w-100 w-lg-25" data-bs-toggle="modal" data-bs-target="#alex">
+            Alex
+          </button>
+          <button type="button" class="btn w-100 w-lg-25" data-bs-toggle="modal" data-bs-target="#allan">
+            Allan
+          </button>
+
         </div>
-        <div class="col-md-6 text-center">
+        </div>
+        <div id="rightAnim" class="col-md-6 text-center">
           <img src="images/band.jpg" alt="Services" class="img-fluid rounded shadow">
         </div>
       </div>
-      <div id="upcomingRow" class="row align-items-center">
+      <div id="upcomingRow" class="row align-items-center justify-content-center">
         <h3 class="display-6 text-center">Upcoming shows:</h3>
             <div class="col-md-3 text-center mt-5">
                 <div class="card">
@@ -71,8 +92,7 @@
                     <div class="card-body">
                       <h5 class="card-title">November 8th</h5>
                       <p class="card-text">
-                        Showtime Studio and Coffee | 3PM
-                     
+                        Showtime Studio and Coffee | 3PM                    
                       </p>
                       <a href="https://www.showtimestudioandcoffee.com" target="_blank">Venue</a>
                     </div>
@@ -89,8 +109,7 @@
                       </p>
                       <a href="https://www.nuckysspeakeasy.com" target="_blank">Venue</a>
                     </div>
-                </div>
-                
+                </div>           
             </div>
       </div>
     </div>
@@ -99,12 +118,12 @@
   <section id="repertoire" class="bg-white">
     <div class="container">
       <h1 class="display-4 mb-5">Repertoire</h1>
-      <div class="row align-items-center">
-        <div class="col-md-4 mb-4 mb-md-0 text-left text-md-start">
-            <ul class="list-unstyled">
+      <div class="row ">
+        <div class="col-md-4 mb-0 text-left text-md-start">
+            <ul class="">
                 <li>Libertango</li>
                 <li>Lullaby of Birdland</li>
-                <li>Bei Mir Bist Dushen</li>
+                <li>Bei Mir Bist Du Shein</li>
                 <li>Waltz Boston</li>
                 <li>On The Street Where You Live</li>
                 <li>Besame Mucho</li>
@@ -113,21 +132,21 @@
                 <li>That Man</li>
             </ul>
         </div>
-        <div class="col-md-4 mb-4 mb-md-0 text-left text-md-start">
-            <ul class="list-unstyled">
+        <div class="col-md-4 mb-0 text-left text-md-start">
+            <ul class="">
                 <li>Something Stupid</li>
                 <li>Harlem Nocturne</li>
-                <li> Manha de Carnival (Black Orpheus)</li>
+                <li>Manha de Carnival (Black Orpheus)</li>
                 <li>Take Five</li>
-                <li> Pink Panther</li>
+                <li>Pink Panther</li>
                 <li>Perduto Amore (In Cerca di Te) </li>
                 <li>Wave</li>
                 <li>My Funny Valentine</li>
                 <li>How Insensetive</li>
             </ul>
         </div>
-        <div class="col-md-4 mb-4 mb-md-0 text-left text-md-start">
-            <ul class="list-unstyled">
+        <div class="col-md-4 mb-0 text-left text-md-start">
+            <ul class="">
                 <li>Devil May Care</li>
                 <li> Tu Vuo Fa L'americano</li> 
                 <li> Meglio Stasera</li>
@@ -144,10 +163,17 @@
     </div>
   </section>
 
-  <section id="media" class="bg-light">
+  <section id="media" class="">
     <div class="container">
-      <h1 class="display-4">Media</h1>
-      <p class="lead">Coming up!.</p>
+      <h1 class="display-4 mb-5">Media</h1>
+	  <div  class="row justify-content-center gap-3">
+            <div class="col-12 col-md-3 ratio ratio-16x9">
+				<iframe src="https://www.youtube.com/embed/2ZS0YiuZw4A?si=uPl82NmQ8IRnCCb-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-12 col-md-3 ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/SXYzk-pFUMs?si=1cELfoFpru5A0TOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+      </div>
     </div>
   </section>
 
@@ -162,6 +188,101 @@
       <p class="mb-1 fs-6">© 2025 Accent Deluxe. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Bio modals -->
+  <div class="modal" tabindex="-1" id="yana">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Yana - vocals</h5>
+
+        </div>
+        <div class="modal-body">
+          <p>The only one of the band, that has no accent, Yana weaves warmth, and sparkling crystal tones throughout the tapestry of jazz meeting other genres. When not indulging her stage junkie identity or cajoling her husband to sing with her, she wields needles as an oncology nurse, dabbles in photography, writing and parenthood, and uses music to raise awareness, funds and support for cancer warriors of yesterday, today and tomorrow.</p>
+        </div>
+        <div class="col mx-2">
+          <img src="images/Yana.jpg" alt="photo" class="img-fluid rounded shadow">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn w-100" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" tabindex="-1" id="stas">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Stas - saxophone</h5>
+        </div>
+        <div class="modal-body">
+          <p>Stas played sax for many year with his deep passion for improvisation. He has played with the wide range of musicians and groups over the years, always seeking new ways to express himself through the sound. As the founder of Accent Deluxe hi brings his belief that music - jazz especially - is the ultimate form of self-expression, channeling that spirit into every performance.</p>
+        </div>
+        <div class="col mx-2">
+          <img src="images/Stas.jpg" alt="photo" class="img-fluid rounded shadow">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn w-100" data-bs-dismiss="modal">Close</button>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" tabindex="-1" id="nick">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Nick - guitar/vocals</h5>
+        </div>
+        <div class="modal-body">
+          <p>Nick is uniquely talented self-taught guitar player and vocalist. He was coerced into joining the group and has been finding new ways to shine ever since. Adept at multiple styles of guitar playing, his expression ranges from mellow and lyrical to full of power. Combined with his vocal performance this makes him our charismatic front man.</p>
+        </div>
+        <div class="col mx-2">
+          <img src="images/Nick.jpg" alt="photo" class="img-fluid rounded shadow">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn w-100" data-bs-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" tabindex="-1" id="alex">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Alex - bass</h5>
+        </div>
+        <div class="modal-body">
+          <p>Alex started playing bass when he was 18. Since then he spent about five years pursuing professional career in jazz performance. Then life happened. And after 30 years, three high school and two college graduations, and two weddings of his kids he is back at playing bass.</p>
+        </div>
+        <div class="col mx-2">
+          <img src="images/Alex.jpg" alt="photo" class="img-fluid rounded shadow">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn w-100" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" tabindex="-1" id="allan">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Allan - sound board/vocals</h5>
+        </div>
+        <div class="modal-body">
+          <p>While he can and does perform on stage when his wife asks him to, Allan finds joy in working with behind the scene machinery the makes us sound good. He has been masterful and reliable sound engineer since his wife Yana joined the group. Once in a while our singing sound engineer surprises audience with his flawless vocal performance.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn w-100" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

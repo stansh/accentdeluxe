@@ -5,28 +5,26 @@
 
 
 
-
 body {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-   
 
-  }
+}
 
-  .navbar{
+.navbar {
    
     background: linear-gradient(to left, #1b0000, #531a00);
-  }
+}
 
-  section {
+section {
     padding: 100px 0;
     min-height: 50vh;
     width: 100%;
     
-  }
+}
 
-  #home{
+#home{
     background-image: url('images/bg_texture1.png');
     background-repeat: 'no-repeat-x';      
     background-size: 'contain';         
@@ -34,31 +32,33 @@ body {
     border-image: url('border.png') 25 round;
     border-bottom: 2px dotted #b7b7b7;
 
-  }
-  #repertoire{
+
+}
+#repertoire{
     background-image: url('images/bg_texture2.jpg');
     background-repeat: 'no-repeat-x';      
     background-size: 'contain';         
     background-position: 'image';  
     border-bottom: 2px dotted #b7b7b7;
 
-  }
-  #media{
+}
+#media{
     background-image: url('images/bg_texture3.jpg');
     background-repeat: 'no-repeat-x';      
     background-size: 'contain';         
     background-position: 'image';  
     border-bottom: 2px dotted #b7b7b7;
 
-  }
-  #contact{
+}
+
+#contact{
     background-image: url('images/bg_texture4.jpg');
     background-repeat: 'no-repeat-x';      
     background-size: 'contain';         
     background-position: 'image';  
     border-bottom: 2px dotted #b7b7b7;
 
-  }
+}
 
   footer{
     background-color: #2a0d01;
@@ -82,14 +82,47 @@ body {
     font-style: .5rem;
   }
 
+  h5:not(.modal-title){
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform:uppercase;
+    font-size: 1.2rem;
+    /* border-top: 2px dotted #b7b7b7; */
+  
+  }
+
   .nav-link{
     font-family: "Kaushan Script", cursive;
     font-size: 1.5rem;
     color: aliceblue;
+
+	
   }
 
   .nav-link:hover{
     color:  rgb(247, 235, 9);
+    
+    animation: bounce; 
+    animation-duration: 2s;
+	
+  }
+
+  .navbar-brand img{
+
+    animation: heartBeat; 
+    animation-duration: 2s;
+  }
+
+  #leftAnim{
+
+
+    animation: fadeInLeft; 
+    animation-duration: 1s;
+  }
+
+  #rightAnim{
+
+    animation: fadeInRight; 
+    animation-duration: 1s;
   }
 
   p {
@@ -99,4 +132,47 @@ body {
 
   #upcomingRow{
     margin-top: 10rem;
+    animation: fadeInUp; 
+    animation-duration: 1s;
   }
+
+  .modal-content{
+    background: #531a00;
+    font-family: "Roboto Condensed", sans-serif;
+    color: white
+  }
+
+  #bios button{
+    background: #531a00;
+    font-weight: 700;
+    color: white;
+
+	
+
+  
+  }
+
+  #bios button:hover{
+    background-color: rgb(247, 235, 9);
+    color: #531a00;
+    font-family: "Kaushan Script", cursive;
+   
+
+  } 
+
+
+  .modal-footer button{
+    background-color: rgb(247, 235, 9);
+    color:#531a00;
+    font-weight: 700;
+  }
+
+  .modal-footer {
+    border-width: 0;
+  }
+
+  .modal-title{
+    font-family: "Kaushan Script", cursive;
+    font-size: 2rem
+  }
+
