@@ -50,9 +50,17 @@ section {
     border-bottom: 2px dotted #b7b7b7;
 
 }
+#reviews{
+  background-image: url('images/bg_texture4.jpg');
+  background-repeat: 'no-repeat-x';      
+  background-size: 'contain';         
+  background-position: 'image';  
+  border-bottom: 2px dotted #b7b7b7;
+
+}
 
 #contact{
-    background-image: url('images/bg_texture4.jpg');
+    background-image: url('images/bg_texture5.jpg');
     background-repeat: 'no-repeat-x';      
     background-size: 'contain';         
     background-position: 'image';  
@@ -174,5 +182,9 @@ section {
   .modal-title{
     font-family: "Kaushan Script", cursive;
     font-size: 2rem
+  }
+
+  #reviews a, #contact a {
+   color: #2a0d01;
   }
 
